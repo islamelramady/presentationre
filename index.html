@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Peachtree — دليل البرزنتيشن | Presentation Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home">
+        <span class="brand-mark">PA</span>
+        <span class="brand-text">
+          <strong>Peachtree</strong>
+          <small data-i18n="brand.sub" class="i18n"></small>
+        </span>
+      </a>
+      <nav class="main-nav" id="mainNav">
+        <a href="#home" class="nav-link active" data-i18n="nav.home"></a>
+        <a href="#flow" class="nav-link" data-i18n="nav.flow"></a>
+        <a href="#team" class="nav-link" data-i18n="nav.team"></a>
+        <a href="#slides" class="nav-link" data-i18n="nav.slides"></a>
+        <a href="#present" class="nav-link nav-cta" data-i18n="nav.present"></a>
+      </nav>
+      <div class="head-actions">
+        <button class="lang-btn" id="langBtn">English</button>
+        <button class="nav-toggle" id="navToggle" aria-label="menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="home">
+      <div class="container">
+        <p class="hero-kicker">Computerized Accounting Software · برامج المحاسبة الآلية</p>
+        <h1 class="hero-title">
+          <span class="i18n-lang" data-lang="ar" data-i18n="hero.titleAr"></span>
+          <span class="i18n-lang hero-en" data-lang="en" data-i18n="hero.titleEn"></span>
+        </h1>
+        <p class="hero-sub">
+          <span class="i18n-lang" data-lang="ar" data-i18n="hero.subAr"></span>
+          <span class="i18n-lang hero-en" data-lang="en" data-i18n="hero.subEn"></span>
+        </p>
+        <ul class="hero-tags" id="heroTags"></ul>
+        <p class="hero-desc" data-i18n="hero.desc"></p>
+        <div class="hero-actions">
+          <a href="#present" class="btn btn-gold" data-i18n="cta.present"></a>
+          <a href="#team" class="btn btn-ghost" data-i18n="cta.team"></a>
+          <a href="assets/Peachtree_Accounting_Presentation_v5.pptx" class="btn btn-ghost" download data-i18n="cta.download"></a>
+        </div>
+        <div class="hero-stats" id="heroStats"></div>
+      </div>
+    </section>
+
+    <!-- ===== FLOW ===== -->
+    <section class="section" id="flow">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="flow.title"></h2>
+          <p data-i18n="flow.desc"></p>
+        </div>
+        <div class="flow-strip" id="flowStrip"></div>
+      </div>
+    </section>
+
+    <!-- ===== TEAM ===== -->
+    <section class="section section-alt" id="team">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="team.title"></h2>
+          <p data-i18n="team.desc"></p>
+        </div>
+        <div class="team-grid" id="teamGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== PRESENTER DETAIL ===== -->
+    <section class="section" id="detail" hidden>
+      <div class="container">
+        <button class="btn btn-ghost btn-back" id="backToTeam" data-i18n="detail.back"></button>
+        <div id="detailBody"></div>
+      </div>
+    </section>
+
+    <!-- ===== SLIDES MAP ===== -->
+    <section class="section section-alt" id="slides">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="slides.title"></h2>
+          <p data-i18n="slides.desc"></p>
+        </div>
+        <div class="slides-grid" id="slidesGrid"></div>
+      </div>
+    </section>
+
+    <!-- ===== PRESENT MODE ===== -->
+    <section class="section present-section" id="present">
+      <div class="container">
+        <div class="section-head">
+          <h2 data-i18n="present.title"></h2>
+          <p data-i18n="present.desc"></p>
+        </div>
+
+        <div class="present-box">
+          <div class="present-top">
+            <div class="present-seg-info">
+              <span class="seg-index" id="segIndex"></span>
+              <span class="seg-name" id="segName"></span>
+              <span class="seg-slides" id="segSlides"></span>
+            </div>
+            <div class="present-controls">
+              <button class="pbtn" id="timerToggle"></button>
+              <button class="pbtn" id="timerReset"></button>
+              <span class="timer-display" id="timerDisplay">0:00</span>
+            </div>
+          </div>
+
+          <div class="present-flow" id="presentFlow"></div>
+          <div class="present-script" id="presentScript"></div>
+
+          <div class="present-handoff" id="presentHandoff"></div>
+
+          <div class="present-nav">
+            <button class="btn btn-ghost" id="prevSeg"></button>
+            <div class="font-controls">
+              <button class="pbtn pbtn-sm" id="fontMinus">A-</button>
+              <button class="pbtn pbtn-sm" id="fontPlus">A+</button>
+            </div>
+            <button class="btn btn-gold" id="nextSeg"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Peachtree Presentation Guide · Computerized Accounting Software</p>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
